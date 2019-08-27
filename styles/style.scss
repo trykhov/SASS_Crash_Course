@@ -1,0 +1,16 @@
+@import "./variables"; // order matters! if this was second, header would not have variables to access
+@import "./header"; // able to import css components from other files
+@import "./mixins";
+
+// variables allow us to reuse and alter components with ease
+// header button {
+//     background: $primaryBtn;
+//     color: $textColor;
+// }
+
+.contact {
+    // @include verticalCenter(column, orange);
+    @extend header; // this inherits all the css of header
+    background: red; // this overrides the background element if it's already in header
+    width: 100% - 30%; // can do math operations
+}

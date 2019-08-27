@@ -1,0 +1,12 @@
+// mixins are functions
+// allows us to reuse code
+
+// insert variables
+@mixin verticalCenter($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    flex-direction: $direction;
+    background: $background;
+}

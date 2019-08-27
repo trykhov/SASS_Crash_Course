@@ -1,0 +1,37 @@
+header, .contact {
+  /* when you save this file, it will be translated to the css page */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: blue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightblue;
+}
+
+header button, .contact button {
+  background: #a5c4a5;
+  color: #18df8c;
+}
+
+header h1:hover, .contact h1:hover {
+  background: green;
+}
+
+header h1::after, .contact h1::after {
+  content: "Hello!";
+}
+
+.contact {
+  background: red;
+  width: 70%;
+}
+/*# sourceMappingURL=style.css.map */

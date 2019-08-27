@@ -1,0 +1,22 @@
+@import "./mixins"; // can import functions / mixins
+
+header {
+    /* when you save this file, it will be translated to the css page */
+    @include verticalCenter(column, lightblue);
+    // instead of writing: header button { ... } outside
+    // we can:
+    button {
+        background: $primaryBtn;
+        color: $textColor;
+    }
+    h1 { // the same as header p { ... }
+        // color: #fff;
+        // for things like hover
+        &:hover {
+            background: green;
+        }
+        &::after {
+            content: "Hello!"
+        }
+    }
+}
